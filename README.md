@@ -57,12 +57,12 @@ information [here](https://help.github.com/articles/github-flow/)
 1. Create a new page with your tutorial/setup/widget/snippet in Markdown, with a
    relevant name, under the `recipes` folder.
 
-  - Example `recipes/xrandr-tutorial.mdmw`
+  Example `recipes/xrandr-tutorial.mdmw`
 
 1. Link your page to the right section in the `recipes.mdwn` page with Markdown
    syntax.
 
-  - Example `[XrandR Tutorial](../recipes/xrandr-tutorial.html)`
+  Example `[XrandR Tutorial](../recipes/xrandr-tutorial.html)`
 
 ### Seeing results and pulling your changes
 
