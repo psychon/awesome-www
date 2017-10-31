@@ -1,7 +1,4 @@
 dist: trusty
-branches:
-  only:
-    - master
 env:
   global:
     - BUILD_WEB=/tmp/build-web
@@ -81,8 +78,11 @@ install:
   # lgi is too old
   - travis_retry luarocks --local install lgi
 
+  - gem install mdl
+
 script:
   - PKG_CONFIG_PATH="$HOME/install/lib/pkgconfig" make build_for_travis
+  - mdl .
 
 after_success:
   - |
