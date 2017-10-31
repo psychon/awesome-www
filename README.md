@@ -21,8 +21,8 @@ To view it, open `html/index.html` in your web browser.
 You can simulate running a web server using Python, which will automatically
 open `index.html` when following a link to a directory:
 
-    $ cd html
-    $ python3 -m http.server -b localhost 8000 &
+    cd html
+    python3 -m http.server -b localhost 8000 &
 
 ## Contributing to the Screenshots Section
 
@@ -30,36 +30,46 @@ To contribute with Screenshots:
 
 1. Add your image to the folder images/screenshots with an appropriate name.
 
-2. Add a new `<figure>` tag in the bottom of *screenshots.mdwn*,
+1. Add a new `<figure>` tag in the bottom of *screenshots.mdwn*,
 
-3. Inside the new tag, add the screenshots with a <img> tag and use the `<figcaption>` to add caption to the image, explaining what is being used on the screenshot.
+1. Inside the new tag, add the screenshots with a `<img>` tag and use the
+   `<figcaption>` to add caption to the image, explaining what is being used on
+   the screenshot.
 
 ## Contributing to Recipes Section
 
-1. Fork this repository and create a new branch with a name relevant to the information you will be adding to the site.
-If you have doubts in how to Fork and Branch, take a look in this cheat-sheet [here](https://www.git-tower.com/blog/git-cheat-sheet/)
+1. Fork this repository and create a new branch with a name relevant to the
+   information you will be adding to the site.
 
-The process of editing files can be done inside GitHub's interface, more information [here](https://help.github.com/articles/github-flow/)
+If you have doubts in how to Fork and Branch, take a look in this cheat-sheet
+[here](https://www.git-tower.com/blog/git-cheat-sheet/)
 
-#### With external Link
+The process of editing files can be done inside GitHub's interface, more
+information [here](https://help.github.com/articles/github-flow/)
 
-1. Create a new link in markdown format `[Link Name](Real Link)` in the appropriate section in `recipes.mdwn` file.
+### With external Link
 
-#### With internal Link (host in awesome site)
+1. Create a new link in markdown format `[Link Name](Real Link)` in the
+   appropriate section in `recipes.mdwn` file.
 
-1. Create a new page with your tutorial/setup/widget/snippet in Markdown, with a relevant name, under the `recipes` folder.
+### With internal Link (host in awesome site)
 
-   - Example `recipes/xrandr-tutorial.mdmw`
+1. Create a new page with your tutorial/setup/widget/snippet in Markdown, with a
+   relevant name, under the `recipes` folder.
 
-2. Link your page to the right section in the `recipes.mdwn` page with Markdown syntax.
+  - Example `recipes/xrandr-tutorial.mdmw`
 
-   - Example `[XrandR Tutorial](../recipes/xrandr-tutorial.html)`
+1. Link your page to the right section in the `recipes.mdwn` page with Markdown
+   syntax.
 
-#### Seeing results and pulling your changes
+  - Example `[XrandR Tutorial](../recipes/xrandr-tutorial.html)`
 
-1. Build the site as explained in the Hacking section in this same page to check how your changes will look like.
+### Seeing results and pulling your changes
 
-2. If everything is right and looks good, you're ready do make a Pull Request.
+1. Build the site as explained in the Hacking section in this same page to check
+   how your changes will look like.
+
+1. If everything is right and looks good, you're ready do make a Pull Request.
 
 ## Publishing
 

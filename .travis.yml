@@ -82,7 +82,7 @@ install:
 
 script:
   - PKG_CONFIG_PATH="$HOME/install/lib/pkgconfig" make build_for_travis
-  - mdl .
+  - mdl --git-recurse .
 
 after_success:
   - |
